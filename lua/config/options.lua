@@ -7,13 +7,12 @@ vim.opt.cursorline = false
 vim.opt.ignorecase = false
 vim.opt.linebreak = false
 vim.opt.list = false
-vim.opt.number = false
-vim.opt.numberwidth = 1
+vim.opt.number = true
+vim.opt.numberwidth = 4
 vim.opt.relativenumber = false
 vim.opt.shiftwidth = 4
-vim.opt.signcolumn = "number"
+vim.opt.statuscolumn = "%@SignCb@%s%=%T%@NumCb@%l│%T"
 vim.opt.smarttab = true
 vim.opt.smartindent = true
-vim.opt.statuscolumn = ""
 vim.opt.tabstop = 8
 vim.opt.wrap = true
