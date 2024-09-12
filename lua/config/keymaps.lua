@@ -14,3 +14,15 @@ vim.keymap.del({ "i", "x", "n", "s" }, "<C-s>")
 vim.keymap.del("n", "<leader>fn")
 -- I know how to exit vim...
 vim.keymap.del("n", "<leader>qq")
+
+-- Toggle LSP inlay hints
+local function toggle_inlay_hints()
+    local current_buf = vim.api.nvim_get_current_buf()
+    if vim.lsp.inlay_hint.is_enabled({current_buf}) then
+        vim.lsp.inlay_hint.enable(false, {current_buf})
+    else
+        vim.lsp.inlay_hint.enable(true, {current_buf})
+    end
+end
+
+map("n", "<leader>ch", toggle_inlay_hints, { desc = "Toggle LSP inlay hints" })
