@@ -16,3 +16,6 @@ vim.opt.smarttab = true
 vim.opt.smartindent = true
 vim.opt.tabstop = 8
 vim.opt.wrap = true
+
+-- animation scrolling is annoying
+vim.g.snacks_animate = false
