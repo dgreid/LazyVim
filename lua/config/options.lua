@@ -19,3 +19,4 @@ vim.opt.wrap = true
 
 -- animation scrolling is annoying
 vim.g.snacks_animate = false
+vim.g.snacks_indent = false
