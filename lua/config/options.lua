@@ -20,3 +20,12 @@ vim.opt.wrap = true
 -- animation scrolling is annoying
 vim.g.snacks_animate = false
 vim.g.snacks_indent = false
+
+-- Disable format on save for C files
+vim.g.autoformat = true -- Keep global format on save enabled
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "c",
+  callback = function()
+    vim.b.autoformat = false -- Disable format on save for C files only
+  end,
+})
