@@ -3,8 +3,6 @@ return {
   { "akinsho/bufferline.nvim", enabled = false },
   --- Don't need funky vertical bars for indentaiton
   { "lukas-reineke/indent-blankline.nvim", enabled = false },
-  --- The autocomplete is super annoying with enter to complete.
-  { "hrsh7th/nvim-cmp", enabled = false },
   --- hate matching pairs
   { "echasnovski/mini.pairs", enabled = false },
   --- regular seach is fine and the default keymaps are intrusive (s = switch)
